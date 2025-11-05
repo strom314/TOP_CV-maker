@@ -1,0 +1,7 @@
+.section-container {
+  display: flex;
+  justify-content: center;
+}
+.section{
+    border: solid black 1px;
+}
