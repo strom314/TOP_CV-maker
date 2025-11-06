@@ -40,11 +40,13 @@ function App() {
       </div>
 
       <div className="display-section">
-        <Preview
-          generalInfo={generalInfo}
-          school={school}
-          experience={experience}
-        ></Preview>
+        <div className="cv-preview">
+          <Preview
+            generalInfo={generalInfo}
+            school={school}
+            experience={experience}
+          ></Preview>
+        </div>
       </div>
     </div>
   );
