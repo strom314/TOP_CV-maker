@@ -1,11 +1,12 @@
-export function Experience(experience, setExperience) {
+export function Experience({ experience, setExperience }) {
   function handleChange(e) {
     const { name, value } = e.target;
-    setExperience(...experience, { [name]: value });
+    setExperience({ ...experience, [name]: value });
   }
 
   return (
-    <div>
+    <div className="input-container">
+      <h2>Work experience</h2>
       <label htmlFor="company">company name</label>
       <input
         type="text"

@@ -27,21 +27,25 @@ function App() {
 
   return (
     <div className="section-container">
-      <GeneralInfo
-        generalInfo={generalInfo}
-        setGeneralInfo={setGeneralInfo}
-      ></GeneralInfo>
-      <School school={school} setSchool={setSchool}></School>
-      <Experience
-        experience={experience}
-        setExperience={setExperience}
-      ></Experience>
+      <div className="input-section">
+        <GeneralInfo
+          generalInfo={generalInfo}
+          setGeneralInfo={setGeneralInfo}
+        ></GeneralInfo>
+        <School school={school} setSchool={setSchool}></School>
+        <Experience
+          experience={experience}
+          setExperience={setExperience}
+        ></Experience>
+      </div>
 
-      <Preview
-        generalInfo={generalInfo}
-        school={school}
-        experience={experience}
-      ></Preview>
+      <div className="display-section">
+        <Preview
+          generalInfo={generalInfo}
+          school={school}
+          experience={experience}
+        ></Preview>
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ export function School({ school, setSchool }) {
     setSchool({ ...school, [name]: value });
   }
   return (
-    <div>
+    <div className="input-container">
       <input
         type="text"
         name="school"

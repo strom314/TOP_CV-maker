@@ -17,5 +17,5 @@ export function Preview({ generalInfo, school, experience }) {
       <p>{experience.years}</p>
       <p>{experience.description}</p>
     </div>
-  );
+  ); 
 }

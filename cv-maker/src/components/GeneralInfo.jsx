@@ -5,8 +5,8 @@ export function GeneralInfo({ generalInfo, setGeneralInfo }) {
   }
 
   return (
-    <div>
-      <h2>general information</h2>
+    <div className="input-container">
+      <h2>Personal information</h2>
       <label htmlFor="first-name">first name</label>
       <input
         type="text"

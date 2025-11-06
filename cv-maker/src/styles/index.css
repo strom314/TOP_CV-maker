@@ -1,7 +1,16 @@
 .section-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
-.section{
-    border: solid black 1px;
+.input-section {
+  grid-column: 1 2;
+  border: solid black 1px;
+}
+.display-section {
+  grid-column: 2 4;
+  border: solid black 1px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
 }
